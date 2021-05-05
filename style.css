@@ -1,0 +1,335 @@
+/* Body Elements START*/
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400px;
+	line-height: 1.5;
+}
+a, a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0;
+}
+/* Body Elements END*/
+
+/* Header & Navigation START */
+#Header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 14px 0;
+	z-index: 999;
+	transition: all 0.25s ease 0s;
+}
+
+#Header .menu-wrap {
+	display: inline-block;
+	position: relative;
+	z-index: 9;
+	padding-top: 12px;
+}
+
+#nav-icon1 {
+  width: 35px;
+  height: 25px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+#nav-icon1 span:nth-child(1) {
+  top: 0px;
+}
+#nav-icon1 span:nth-child(2) {
+  top: 11px;
+}
+#nav-icon1 span:nth-child(3) {
+  top: 21px;
+}
+#nav-icon1.open span:nth-child(1) {
+  top: 11px; 
+  transform: rotate(135deg);
+}
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+#nav-icon1.open span:nth-child(3) {
+  top: 11px; 
+  transform: rotate(-135deg);
+}
+body.sticky #Header {
+	background-color: rgba(0, 0, 0, 0.8);
+	transition: all 0.25s ease 0s;
+}
+body.menu-active #Header .mobile-menu {
+	display: block;
+}
+#Header .mobile-menu {
+	background-color: rgba(0, 0, 0, 0.7);
+	display: none;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+#Header .mobile-menu ul {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+}
+#Header .mobile-menu ul li, #Header .mobile-menu ul li a {
+	color: #fff;
+	list-style: none;
+	font: 18px 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+#Header .mobile-menu ul li a:hover {
+  font-style: italic;
+}
+/* Header & Navigation END */
+
+/* Services START */
+#Services {
+	padding: 45px 0;
+}
+#Services .title {
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+#Services .title h3 {
+	font: 26px'Open Sans', sans-serif;
+	color: #333;
+	margin: 0 0 30px;
+}
+#Services .title p {
+	font:16px 'Open Sans', sans-serif;
+	color: #333;
+	margin: 0 0 30px;
+}
+#Services .icon {
+	background-color: #343A40;
+	min-height: 450px;
+	text-align: center;	
+	cursor: pointer;
+	position: relative;
+}
+#Services .icon .icon-wrap {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+#Services .icon .icon-wrap i {
+	color: #fff;
+	font-size: 100px;
+}
+#Services .icon .icon-text {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	padding: 10px 20px;
+	text-align: left;
+	transition: all 0.5s;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+#Services .icon .icon-text h3 {
+	color: #fff;
+	margin: 0 0 15px;
+	font: 20px 'Open Sans', sans-serif;
+}
+#Services .icon .icon-text p {
+	color: #fff;
+	margin: 0 0 15px;
+	font: 18px'Open Sans', sans-serif;
+}
+#Services .icon .icon-text .cta a {
+	color: #fff;
+	display: inline-block;
+}
+#Services .icon .icon-text .cta i {
+	color: #fff;
+	font-size: 25px;
+	position: relative;
+	left: -15px;
+	transition: all 0.3s;
+}
+#Services .icon:hover .icon-text .cta a i {
+	opacity: 1;
+	left: 0;
+	transition: all 0.3s;
+}
+#Services .icon .icon-text .cta a:hover i {
+	color: #000000;
+}
+#Services .icon:hover .icon-wrap {
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s;
+}
+#Services .icon:hover .icon-text {
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.5s;
+}
+/* Services END */
+
+/* About Us START */
+#AboutUs {
+	background-color: #efefef;
+  font: 26px 'Open Sans', sans-serif;
+  color: #333;
+  margin-bottom: 50px;
+}
+/* About Us END */
+
+/*Contact Us START*/
+#ContactUs {
+  margin-top: 50px;
+	padding: 70px 0;
+  height: 420px;
+  background-color: rgb(243, 243, 243);
+}
+#ContactUs .contact-title {
+	font: 26px 'Open Sans', sans-serif;
+	color: #333;
+	text-align: center;
+	margin: 0 0 30px;
+}
+#ContactUs .contact-outer-wrapper {
+	width: 100%;
+	height: auto;
+	display: table;
+	margin: 0 auto;
+}
+#ContactUs .form-wrap {
+	width: 60%;
+	display: table-cell;
+	padding: 40px;
+}
+#ContactUs .form-wrap p {
+	font: 16px 'Open Sans', sans-serif;
+	color: #333;
+	margin: 0 0 45px;
+}
+#ContactUs .form-wrap .floating-label {
+	position: relative;
+	width: 47%;
+	display: inline-block;
+	margin-bottom: 30px;
+}
+#ContactUs .form-wrap .fname, #ContactUs .form-wrap .contact {
+	margin-right: 20px;
+}
+#ContactUs .floating-input {
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid #999999;
+	background-color: transparent;
+	padding-top: 3px;
+}
+#ContactUs .floating-input:focus {
+	outline: 0;
+}
+/*Contact Us END*/
+
+/*Media query - Mobile Devices START*/
+@media (min-width: 0px) and (max-width: 767px) {
+    #Header {
+      padding: 16px 0;
+    }
+    #Header .logo a img {
+      width: 60px;
+    }
+    #Header .menu-wrap {
+      padding-top: 3px;
+    }
+    #nav-icon1 {
+      width: 40px;
+      height: 30px;
+    }
+    #nav-icon1 span {
+      height: 3px;
+    }
+    #nav-icon1 span:nth-child(2) {
+      top: 12px;
+    }
+    #nav-icon1 span:nth-child(3) {
+      top: 23px;
+    }
+    #Services .icon .icon-text,
+    #Services .icon:hover .icon-wrap {
+      visibility: visible;
+      opacity: 1;
+    }
+    #Services .icon .icon-wrap,
+    #Services .icon .icon-text {
+      position: static;
+      transform: none;
+    }
+    #Services .icon .icon-text {
+      padding-bottom: 20px;
+    }
+    #Services .icon .icon-wrap {
+      padding-top: 16px;
+    }
+    #Services .icon .icon-wrap i {
+      font-size: 50px;
+    }
+    #Services .title {
+      width: 100%;
+    }
+    #Services .title h3 {
+      font-size: 22px;
+    }
+    #Services .title h3 br {
+      display: none;
+    }
+    #Services .title p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    #Services .icon {
+      min-height: 290px;
+      margin-bottom: 10px;
+    }
+
+    #ContactUs .form-wrap {
+      width: 100%;
+      padding: 20px;
+      display: block;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    #ContactUs .form-wrap .floating-label {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+/*Media query - Mobile Devices END*/
+
